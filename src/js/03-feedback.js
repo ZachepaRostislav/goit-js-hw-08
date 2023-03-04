@@ -30,9 +30,9 @@ function getLocalStorageValue() {
   const { email, message } = form.elements;
   if (storage) {
     console.log(parseStorage)
-    email.value = parseStorage.email || '';
-    message.value = parseStorage.message || '';
   }
+  email.value = parseStorage.email
+  message.value = parseStorage.message
 }
 
 function downloadPage() {
